@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Ciepły gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+    overflow: hidden; /* Usunięcie pasków przewijania */
+}
+
+.game-container {
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#clickable-barrel {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#clickable-barrel:hover {
+    transform: scale(1.1);
+}
+
+/* Menu walut w prawym górnym rogu */
+.currency-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 50px;
+    font-size: 2.5rem;
+}
+
+.currency-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.currency-icon {
+    width: 105px;
+    height: 150px;
+}
+
+#scrap, #magnets {
+    font-size: 5.4rem;
+}
+
+/* Ikona Upgrades (strzałka) */
+.upgrades-icon {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    z-index: 10;
+}
+
+/* Okno Upgrades */
+.upgrades {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 20;
+}
+
+/* Zakładki */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Większy odstęp między kategoriami */
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tab img {
+    width: 40px;
+    height: 50px;
+}
+
+/* Treści zakładek */
+.tab-content {
+    display: none;
+    margin-top: 20px; /* Większy odstęp między treścią a przyciskami */
+}
+
+.tab-content.visible {
+    display: block;
+}
+
+/* Przyciski Upgrade */
+.upgrade-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.upgrade-btn:hover {
+    background-color: #555;
+}
+
+.upgrade-btn:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
