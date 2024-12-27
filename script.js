@@ -5,6 +5,8 @@ let scrapPerSecond = 0;  // Scrap na sekundę
 let tapToMagnetCost = 100;  // Koszt przycisku -1 Tap To 1 Magnet
 let scrapPerClick = 1;  // Scrap na jedno kliknięcie
 let magnetEffectCost = 10;  // Koszt przycisku Double Scrap Per Click
+let targetScrap = 1;
+let button = document.getElementById("scrap-per-second");
 
 const scrapElement = document.getElementById('scrap');
 const magnetsElement = document.getElementById('magnets');
@@ -13,6 +15,7 @@ const upgradesIcon = document.getElementById('upgrades-icon');
 const upgradesWindow = document.getElementById('upgrades');
 const tabs = document.querySelectorAll('.tab');
 const tabContents = document.querySelectorAll('.tab-content');
+
 
 // Przyciski w Scrap Upgrades
 const scrapPerSecondBtn = document.getElementById('scrap-per-second');
@@ -26,7 +29,7 @@ barrelImage.addEventListener('click', () => {
     clickCount++;
 
     // Zwiększamy magnes co 100 kliknięć
-    if (clickCount >= 100) {
+    if (clickCount >= 10) {
         magnets++;
         clickCount = 0;
     }
@@ -69,10 +72,12 @@ tabs.forEach((tab) => {
 
 // Obsługa przycisku Scrap Per Second
 scrapPerSecondBtn.addEventListener('click', () => {
-    if (scrap >= 10) {
-        scrap -= 10;
+    if (scrap >= 10*targetScrap) {
+        scrap -= 10*targetScrap;
         scrapPerSecond++;
+        targetScrap++;
         scrapElement.textContent = `${Math.floor(scrap)}`;
+        button.textContent = `Scrap Per Second (${10 * targetScrap} Scrap)`;
         updateScrapPerSecond();  // Rozpoczynanie dodawania scrapów co sekundę
     }
 });
