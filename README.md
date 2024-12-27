@@ -13,5 +13,7 @@ Changed:
 - Made Scrap per Second more expensive with each level to not make it OP
 - Magnets are now avaiable every 10 clicks (Second Upgrade does not work)
 
+https://olaf294.github.io/Scrap-1-Html/Index.html
+
 This is my first real contribution to any project!!
 ----------
