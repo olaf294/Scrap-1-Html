@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrap 1 HTML</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrap 1 HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Scrap 1 HTML</h1>
-        
-        <!-- Ikona Upgrades (strzałka) -->
-        <div id="upgrades-icon" class="upgrades-icon">
-            <img src="assets/arrow.png" alt="Upgrades Toggle">
-        </div>
-        
-        <!-- Okno Upgrades -->
-        <div id="upgrades" class="upgrades">
-            <div class="tabs">
-                <button class="tab" data-tab="scrap-tab">
-                    <img src="assets/scrapvalue.png" alt="Scrap">
-                </button>
-                <button class="tab" data-tab="magnet-tab">
-                    <img src="assets/magnet.png" alt="Magnet">
-                </button>
-            </div>
-            <div id="scrap-tab" class="tab-content">
-                <button id="scrap-per-second" class="upgrade-btn">Scrap Per Second (10 Scrap)</button>
-                <button id="tap-to-magnet" class="upgrade-btn">-1 Tap To 1 Magnet (100 Scrap)</button>
-            </div>
-            <div id="magnet-tab" class="tab-content hidden">
-                <button id="magnet-effect" class="upgrade-btn">Double Scrap Per Click (10 Magnets)</button>
-            </div>
-        </div>
+    <div class="game-container">
+        <h1>Scrap 1 HTML</h1>
+        
+        <!-- Ikona Upgrades (strzałka) -->
+        <div id="upgrades-icon" class="upgrades-icon">
+            <img src="assets/arrow.png" alt="Upgrades Toggle">
+        </div>
+        
+        <!-- Okno Upgrades -->
+        <div id="upgrades" class="upgrades">
+            <div class="tabs">
+                <button class="tab" data-tab="scrap-tab">
+                    <img src="assets/scrapvalue.png" alt="Scrap">
+                </button>
+                <button class="tab" data-tab="magnet-tab">
+                    <img src="assets/magnet.png" alt="Magnet">
+                </button>
+            </div>
+            <div id="scrap-tab" class="tab-content">
+                <button id="scrap-per-second" class="upgrade-btn">Scrap Per Second (10 Scrap)</button>
+                <button id="tap-to-magnet" class="upgrade-btn">-1 Tap To 1 Magnet (100 Scrap)</button>
+            </div>
+            <div id="magnet-tab" class="tab-content hidden">
+                <button id="magnet-effect" class="upgrade-btn">Double Scrap Per Click (10 Magnets)</button>
+            </div>
+        </div>
 
-        <!-- Menu walut w prawym górnym rogu -->
-        <div class="currency-menu">
-            <div class="currency-item">
-                <img src="assets/scrapvalue.png" alt="Scrap" class="currency-icon">
-                <span id="scrap">0</span>
-            </div>
-            <div class="currency-item">
-                <img src="assets/magnet.png" alt="Magnet" class="currency-icon">
-                <span id="magnets">0</span>
-            </div>
-        </div>
+        <!-- Menu walut w prawym górnym rogu -->
+        <div class="currency-menu">
+            <div class="currency-item">
+                <img src="assets/scrapvalue.png" alt="Scrap" class="currency-icon">
+                <span id="scrap">0</span>
+            </div>
+            <div class="currency-item">
+                <img src="assets/magnet.png" alt="Magnet" class="currency-icon">
+                <span id="magnets">0</span>
+            </div>
+        </div>
 
-        <!-- Obrazek, na który klikamy -->
-        <img src="assets/Barrel_1.png" alt="Barrel" id="clickable-barrel">
-    </div>
+        <!-- Obrazek, na który klikamy -->
+        <img src="assets/Barrel_1.png" alt="Barrel" id="clickable-barrel">
+    </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
