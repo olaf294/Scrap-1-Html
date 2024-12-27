@@ -6,6 +6,12 @@ What's in the Latest Version? (Alpha-0.1.00)🤔
 
 The next updates will appear soon. Any errors can be reported via discord via pv: doctorek_4433
 
-Should be available at https://olaf294.github.io/Scrap-1-Html/
+----------
+Updated version by olaf_294
 
-If it doesn't work and you know why please dm me on discord (olaf_294) or create your own fork
+Changed:
+- Made Scrap per Second more expensive with each level to not make it OP
+- Magnets are now avaiable every 10 clicks (Second Upgrade does not work)
+
+This is my first real contribution to any project!!
+----------
